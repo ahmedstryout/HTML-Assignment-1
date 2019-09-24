@@ -139,15 +139,16 @@ padding: 10px;}
 }
 
 .main-box{
-  width: 117%;
   margin: 53px;
+  width: 50%;
 }
 
-.box1{
+.box{
   padding: 15px;
     background-color: white;
     padding: -9px;
     margin-bottom: 35px;
+    margin-right: 52px;
   
 }
 .box2{
@@ -155,11 +156,10 @@ padding: 10px;}
   color: white;
   padding: 10px;
   margin-bottom :35px;
+  margin-right: 52px;
 }
 
-.box1 h5{
-  color: #717171;
-}
+
 .right-area{
   position: absolute;
   left: 50%;
@@ -187,7 +187,7 @@ padding: 10px;}
   background-color: #0A1118
 }
 .main-box-right{
-  margin-left: 21px;
+  width: 57%;
 }
 
 .main-box-right1{
