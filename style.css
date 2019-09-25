@@ -1,6 +1,6 @@
 *{
   font-family:Poppins;
-  outline: none;
+  
 }
 
 .container{
@@ -31,6 +31,11 @@ padding: 10px;}
     display: inline-flex;
     
   }
+  nav .active a{
+
+    color: darkorange;
+
+  }
   
   ul {
     list-style: none;
@@ -45,7 +50,7 @@ padding: 10px;}
     padding: 1rem;
     position: relative;
     text-decoration: none;
-    transition-duration: 0.5s;
+    
   }
     
   
@@ -306,6 +311,10 @@ ol {
       
     }
 
+    footer{
+      position: relative;
+    }
+
     .footer-links a{
       color: black;
     }
@@ -343,5 +352,95 @@ ol {
     .footer-right img:hover{
       opacity: 0.5;
     }
+   .banner-content .banner{
+     width: 100%;
+   }
 
 
+
+
+  
+
+
+.container {
+   
+   width: 100%;
+  
+   margin-top: 3%;
+   height: 100%;
+   position: relative;
+}
+
+.First-container{
+  display: inline-flex;
+
+  width: 100%;
+}
+
+.form {
+   
+   text-align: center;  
+}
+.contact-title {
+   text-align: center;
+   font-size: 183%;
+   margin-left: -78px;
+}
+header::after {
+   content: " ";
+   clear: both;
+   display: block;
+}
+input[type=text], input[type=email], input[type=tel] {
+   background:transparent;
+   border-bottom: 1px solid black;
+   border-left: none;
+   border-right: none;
+   border-top: none;
+   margin: 0px 105px 0px 0px;
+   padding-top: 50px;
+}
+
+input[type=text]:focus~.name {
+  display:block;
+  color: black;
+  top: -20px;
+  font-size: 14px;
+}
+
+select {
+   width: 162px;
+   background: transparent;
+   border-bottom: 1px solid black;
+   border-left: none;
+   border-right: none;
+   border-top: none;
+   margin:50px 105px 0px 0px;
+}
+.check input[type=checkbox]{
+   margin-top: 60px;
+}
+.submit-button {
+   background: #c8122e;
+   border: none;
+   color: white;
+   margin-top: 80px;
+   padding: 12px 20px;
+   border-radius: 12px;
+}
+select option {
+   background: #cacfd4;
+   border: none;
+}
+.submit-button:hover {
+   opacity: 0.5;
+}
+
+input:hover::placeholder ,input:focus::placeholder{
+  font-size:12px;
+  position: relative;
+  top: -20px;
+  transition: all ease 0.5s;
+  font-weight: bold;
+  font-size: 100%;
+}
