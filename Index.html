@@ -11,19 +11,32 @@
                 <div class="logo">
                   <img src="frontend-assignment/task(1)/Files/logo.svg" width="60">
                   </div>
-                <nav>
+                <nav class="menu">
                   <ul>
                   <li><a href="#">Find Your Homes</a></li>
                   <li><a href="#">Floor Plans</a></li>
-                  <li><a href="#">News</a></li>
-                  <li><a href="#">Resources</a></li>
+                  <li><a href="#">News</a>
+                    <ul class="dropdown">
+                      <li><a href="#">News-1</a></li>
+                      <li><a href="#">News-2</a></li>
+                      <li><a href="#">News-3</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">Resources</a>
+                    <ul class="dropdown">
+                      <li><a href="#">Resource-1</a></li>
+                      <li><a href="#">Resource-2</a></li>
+                      <li><a href="#">Resource-3</a></li>
+                    </ul>
+                  </li>
                   <li><a href="#">About Us</a></li>
                   <li><a href="#">Contact Us</a></li>
-                  <li><div class="header_phone">
+                </ul>
+                  <div class="header_phone">
                          <img src="frontend-assignment/task(1)/Files/phone.png">
                         <a href="#" style="color:white; text-decoration: none;"> 9740 30 9833</a>
-                              </div></li>
-                  </ul>
+                              </div>
+                  
                   </nav>
                 
                 
@@ -50,15 +63,15 @@
                           </div>
                           <div class="third-container">
                             <div class="main-box">
-                            <div class="box" id="box1" tabindex="1" onfocus="display_Content('box1-head','box1-content')" onclick="display_Content('box1-head','box1-content')">
+                            <div class="box" id="box1" tabindex="0"  onkeypress="display_Content('box1-head','box1-content')" onclick="display_Content('box1-head','box1-content')">
                               <h3 id="box1-head">2016</h3>
                               <h5 id="box1-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, temporibus! Eos laborum facere,  sint sapiente in excepturi.</h5>
                             </div>
-                            <div class="box2" id="box2" tabindex="2" onfocus="display_Content('box2-head','box2-content')" onclick="display_Content('box2-head','box2-content')">
+                            <div class="box2" id="box2" tabindex="0"  onkeypress="display_Content('box2-head','box2-content')" onclick="display_Content('box2-head','box2-content')">
                                 <h3 id="box2-head">WINNER!</h3>
                                 <h5 id="box2-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id officiis exercitationem ad odit natus ratione. Sequi, non.</h5>
                               </div>
-                              <div class="box" id="box3" tabindex="3" onfocus="display_Content('box3-head','box3-content')" onclick="display_Content('box3-head','box3-content')">
+                              <div class="box" id="box3" tabindex="0"  onkeypress="display_Content('box3-head','box3-content')" onclick="display_Content('box2-head','box2-content')">
                                   <h3 id="box3-head">GREEN TAG SALE</h3>
                                   <h5 id="box3-content">Etiam hendrerit sapien orci, ac rutrum augue posuere at. Aliquam placerat dignissim felis id egestas. Donec a gravida magna.</h5>
                                 </div>

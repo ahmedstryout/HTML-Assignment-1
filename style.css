@@ -1,5 +1,6 @@
 *{
   font-family:Poppins;
+  outline: none;
 }
 
 .container{
@@ -11,30 +12,74 @@
   
   .logo img{float:left;
 padding: 10px;}
-  
-  ul li{
-    display: inline-block; 
-    padding:10px;
-    font-size:16px; 
-    font-family:Poppins;
-    
-  }
+
 
   ul li a{
     text-decoration: none;
     color: black;
+    cursor: pointer;
   }
   
-  ul li a:hover{
+  ul li a:hover,
+  ul li a:focus-within{
     color:orange;
     
   }
+ 
+  
+  nav {
+    display: inline-flex;
+    
+  }
+  
+  ul {
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+    
+  }
+  
+  li {
+    display: block;
+    float: left;
+    padding: 1rem;
+    position: relative;
+    text-decoration: none;
+    transition-duration: 0.5s;
+  }
+    
+  
+  
+  ul li ul {
+    background: white;
+    position: absolute;
+    transition: all 0.5s ease;
+    margin-top: 1rem;
+    padding: 1rem;
+    left: 0;
+    display: none;
+  }
+  
+  ul li:hover > ul,
+  ul li:focus-within > ul,
+  ul li ul:hover,
+  ul li ul:focus {
+     visibility: visible;
+     opacity: 1;
+     display: block;
+  }
+  
+  ul li ul li {
+    clear: both;
+    width: 100%;
+  }
 
-  ul li .header_phone:hover{
+  nav .header_phone:hover,
+  .header_phone:focus-within{
     background-color: orange;
   }
 
-  .header_phone
+ nav .header_phone
 {
 	width: 190px;
 	height: 54px;
@@ -158,6 +203,17 @@ padding: 10px;}
   margin-bottom :35px;
   margin-right: 52px;
 }
+
+.box:focus
+{
+  border:1px solid black;
+}
+
+.box2:focus
+{
+  border:1px solid black;
+}
+
 
 
 .right-area{
@@ -288,11 +344,4 @@ ol {
       opacity: 0.5;
     }
 
-  /*<!----------Responsiveness----------->*/
-
-  @media screen and (max-width:800px){
-    nav a{
-      font-size: 60%;
-    }
-  }
 
