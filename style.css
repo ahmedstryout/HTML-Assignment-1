@@ -22,7 +22,7 @@ padding: 10px;}
   
   ul li a:hover,
   ul li a:focus-within{
-    color:orange;
+    color:#c8122e;
     
   }
  
@@ -354,6 +354,7 @@ ol {
     }
    .banner-content .banner{
      width: 100%;
+     display: inline;
    }
 
 
@@ -364,15 +365,34 @@ ol {
 
 .container {
    
-   width: 100%;
+  margin-left: 140px;
   
    margin-top: 3%;
    height: 100%;
    position: relative;
 }
 
+.First-container-contact{
+  display: flex;
+}
+
+.banner-content-contact{
+  float: left;
+    width: 50%;
+    opacity: 0.5;
+  
+}
+
+.banner-contact{
+  width: 100%;
+ 
+}
+
+
+
+
 .First-container{
-  display: inline-flex;
+
 
   width: 100%;
 }
@@ -381,6 +401,15 @@ ol {
    
    text-align: center;  
 }
+
+/* label {
+  margin-top: 5px;
+  display: block;
+  text-align: left;
+  font: bold 0.8em poppins;
+  text-transform: uppercase;
+} */
+
 .contact-title {
    text-align: center;
    font-size: 183%;
@@ -398,15 +427,10 @@ input[type=text], input[type=email], input[type=tel] {
    border-right: none;
    border-top: none;
    margin: 0px 105px 0px 0px;
-   padding-top: 50px;
+   padding-top: 20px;
 }
 
-input[type=text]:focus~.name {
-  display:block;
-  color: black;
-  top: -20px;
-  font-size: 14px;
-}
+
 
 select {
    width: 162px;
@@ -415,7 +439,7 @@ select {
    border-left: none;
    border-right: none;
    border-top: none;
-   margin:50px 105px 0px 0px;
+   margin:25px 105px 0px 0px;
 }
 .check input[type=checkbox]{
    margin-top: 60px;
@@ -440,7 +464,8 @@ input:hover::placeholder ,input:focus::placeholder{
   font-size:12px;
   position: relative;
   top: -20px;
-  transition: all ease 0.5s;
+  transition: ease-out 5s;
   font-weight: bold;
   font-size: 100%;
 }
+

@@ -7,7 +7,7 @@
 
 </head>
 <body>
-        
+        <header>
                 <div class="logo">
                   <a href="index.html"><img src="frontend-assignment/task(1)/Files/logo.svg" width="60">
                   </a></div>
@@ -38,48 +38,48 @@
                               </div>
                   
                   </nav>
-                  <div class="First-container">
-                        <div class="banner-content">
-                            <img class="banner" src="frontend-assignment/task(1)/Files/mail-banner.jpg"> 
-                            <img class="img-triangle" src="frontend-assignment/task(1)/Files/INFO-BG.svg"  >
-                            <h1 class="home-title">Fill Up<br> the Form</h1>
-                            <h3 class="sub-title">Just Enter the City, Community or Zip you're looking within and you're off..</h3>
+                  </header>
+                  <div class="First-container-contact">
+                        <h1 class="home-title">Fill Up<br> the Form</h1>
+                        <h3 class="sub-title">Just Enter the City, Community or Zip you're looking within and you're off..</h3>
+                        <div class="banner-content-contact">
+                            <img class="banner-contact" src="frontend-assignment/task(1)/Files/mail-banner1.jpg"> 
+                            
+                            
                         </div>
                       
                   <div class="container">
                         <h3 class="contact-title">Contact Form</h3>
                         <form action="thankyou.html" method="POST" class="form">
                             <div class="name">
-                                <input type="text" placeholder="First Name" required>
-                                <input type="text" placeholder="Last Name" required>
+                                <input type="text" placeholder="First Name*" required>
+                                <input type="text" placeholder="Last Name*" required>
                             </div>
                             <div class="email">
-                                <input type="email" placeholder="Work Email" required>
+                                <input type="email" placeholder="Work Email*" required>
                                 <input type="text" placeholder="Company">
                             </div>
                             <div class="select">
-                                <select name="industry" id="" >
-                                        <option value="">Specify Industry</option>
+                                <select name="industry" id="" required >
+                                        <option value="">Specify Industry*</option>
                                     <option value="Industry 1">IT</option>
                                     <option value="Industry 1">Bussiness</option>
                                     <option value="Industry 1">Management</option>
                                 </select>
-                                <select name="function" id="">
-                                        <option value="">Job function</option>
+                                <select name="function" id="" required>
+                                        <option value="">Job function*</option>
                                     <option value="Acounting">Accounting</option>
                                     <option value="Tester">Tester</option>
                                     <option value="Programmer">Designer</option>
                                 </select>
                             </div>
                             <div class="phone">
-                                <input type="tel" placeholder="phone number">
+                                <input type="tel" placeholder="Phone number">
                                     <select name="country" id="">
                                         <option >Country:</option>
-                                        <option value="India">india</option>
+                                        <option value="India">India</option>
                                         <option value="Usa">usa</option>
-                                        <option value="Russia">Russia</option>
-                                        <option value="Japan">japan</option>
-                                        <option value="Srilanka">srilanka</option>
+                                        
                                     </select>
                             </div>
                             <div class="check">
@@ -88,6 +88,7 @@
                             <button type="submit" class="submit-button">Submit</button>
                         </form>
                     </div>
+                    <br style="clear:both;"/>
                 </div>
                     <footer class="footer-distributed">
                           
